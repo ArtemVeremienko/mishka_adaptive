@@ -1,0 +1,13 @@
+.site-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-weight: $bold;
+  font-size: $title-font-size;
+}
+
+.site-list__item {
+  a {
+    color: inherit;
+  }
+}
