@@ -1,5 +1,9 @@
 @import "variables";
 @import "mixins";
-@import "index.scss";
-@import "visually-hidden.scss";
-
+@import "index";
+@import "blocks/visually-hidden.scss";
+@import "blocks/page_header.scss";
+@import "blocks/main-nav.scss";
+@import "blocks/site-list.scss";
+@import "blocks/page-main.scss";
+@import "blocks/assortment.scss"
