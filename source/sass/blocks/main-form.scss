@@ -1,0 +1,41 @@
+.main-form {
+
+}
+
+.main-form__fieldset {
+  padding: 20px 0;
+  border: none;
+  border-top-style: groove;
+  border-top-width: 1px;
+  border-top-color: $mint-color;
+
+}
+
+.main-form__legend {
+  color: $mint-color;
+  font-size: $title-font-size;
+  font-weight: $bold;
+  line-height: (16px / $title-font-size);
+  text-transform: uppercase;
+}
+
+.main-form__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.main-form__option,
+.main-form__full-name {
+  label {
+    font-size: $title-font-size;
+    font-weight: $bold;
+    line-height: (18px / $title-font-size);
+  }
+}
+
+.main-form__notification {
+  color: $description-font-color;
+  font-size: 14px;
+  line-height: (16px / 14px);
+}

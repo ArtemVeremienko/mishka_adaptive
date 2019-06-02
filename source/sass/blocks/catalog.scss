@@ -1,0 +1,25 @@
+.catalog {
+  padding: 30px;
+}
+
+.catalog__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.catalog__title {
+  font-size: $title-font-size;
+  font-weight: $bold;
+  line-height: (24px / $title-font-size);
+}
+
+.catalog__info {
+  color: $description-font-color;
+  font-size: 13px;
+  line-height: (30px / 13px);
+}
+
+.catalog__price {
+  font-weight: $bold;
+}

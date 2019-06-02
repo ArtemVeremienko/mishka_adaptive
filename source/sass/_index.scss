@@ -1,0 +1,23 @@
+html, body {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: $font;
+  font-weight: $regular;
+  font-size: $main-text;
+  color: $main-font-color;
+  line-height: 1.6; // 24px / 15px
+  background-color: $main-color;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+}

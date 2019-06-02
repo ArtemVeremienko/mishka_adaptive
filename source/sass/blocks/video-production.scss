@@ -1,0 +1,17 @@
+.video-production {
+  padding: 30px;
+}
+
+.video-production__title {
+  font-size: $title-font-size;
+}
+
+.video-production__description {
+  color: $description-font-color;
+  font-size: 13px;
+  line-height: (24px / 13px);
+}
+
+.video-production__button {
+  width: 192px;
+}

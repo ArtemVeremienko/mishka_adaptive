@@ -1,0 +1,28 @@
+.reviews {
+  padding: 30px;
+}
+
+.reviews__title {
+  font-size: 25px;
+  font-weight: $bold;
+  line-height: 1.2;
+}
+
+.reviews__text {
+  color: $description-font-color;
+  line-height: 30px / $main-text;
+}
+
+.reviews__author-name {
+  font-weight: $bold;
+  font-size: $title-font-size;
+  font-style: normal;
+  line-height: 24px / $title-font-size;
+  color: $main-font-color;
+}
+
+.reviews__author-social {
+  color: $description-font-color;
+  font-weight: $regular;
+  line-height: 30px / $title-font-size;
+}

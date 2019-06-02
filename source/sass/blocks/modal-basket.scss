@@ -1,0 +1,18 @@
+.modal-basket {
+  padding: 30px;
+  box-shadow: 0 5px 10px rgba(0, 1, 1, 0.25);
+  border: 1px solid #c6c6c6;
+}
+.modal-basket__title {
+  color: $main-font-color;
+  font-family: $font;
+  font-size: 25px;
+  font-weight: $bold;
+  line-height: (30px / 25px);
+  text-transform: uppercase;
+}
+
+.modal-basket__text {
+  color: $description-font-color;
+  line-height: 30px / $main-text;
+}

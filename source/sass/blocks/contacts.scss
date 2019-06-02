@@ -1,0 +1,12 @@
+.contacts {
+  padding: 30px;
+  color: $description-font-color;
+  line-height: (30px / $main-text);
+}
+
+.contacts__title {
+  font-weight: $bold;
+  font-size: 18px;
+  line-height: (30px / 18px);
+  color: $main-font-color;
+}
