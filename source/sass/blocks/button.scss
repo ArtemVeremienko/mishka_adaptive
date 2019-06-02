@@ -1,0 +1,15 @@
+.button {
+  display: inline-block;
+  width: 260px;
+  padding: 15px;
+  font: inherit;
+  font-size: 18px;
+  font-weight: $bold;
+  line-height: 1;
+  border: 2px solid $description-font-color;
+  background-color: $main-color;
+  text-transform: uppercase;
+  text-align: center;
+  vertical-align: middle;
+  color: $description-font-color;
+}
