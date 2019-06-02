@@ -1,19 +1,22 @@
 .main-form {
-  fieldset {
-    padding: 20px 0;
-    border: none;
-    border-top-style: groove;
-    border-top-width: 1px;
-    border-top-color: $mint-color;
 
-  }
-  legend {
-    color: $mint-color;
-    font-size: $title-font-size;
-    font-weight: $bold;
-    line-height: (16px / $title-font-size);
-    text-transform: uppercase;
-  }
+}
+
+.main-form__fieldset {
+  padding: 20px 0;
+  border: none;
+  border-top-style: groove;
+  border-top-width: 1px;
+  border-top-color: $mint-color;
+
+}
+
+.main-form__legend {
+  color: $mint-color;
+  font-size: $title-font-size;
+  font-weight: $bold;
+  line-height: (16px / $title-font-size);
+  text-transform: uppercase;
 }
 
 .main-form__list {

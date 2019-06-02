@@ -38,8 +38,8 @@
         <h2 class="visually-hidden">Форма заказа</h2>
         <p class="purchase-form__description">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
         <form class="purchase-form__form main-form" action="https://echo.htmlacademy.ru" method="get">
-          <fieldset>
-            <legend>Тип</legend>
+          <fieldset class="main-form__fieldset">
+            <legend class="main-form__legend">Тип</legend>
             <ul class="main-form__list">
               <li class="main-form__option">
                 <input class="main-form__input main-form__input-radio" type="radio" name="type" value="accessory" id="accessory" checked>
@@ -51,8 +51,8 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset>
-            <legend>Цвет</legend>
+          <fieldset class="main-form__fieldset">
+            <legend class="main-form__legend">Цвет</legend>
             <ul class="main-form__list">
               <li class="main-form__option">
                 <input class="main-form__input main-form__input-checkbox" type="checkbox" name="white" id="white" checked>
@@ -80,8 +80,8 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset>
-            <legend>ФИО</legend>
+          <fieldset class="main-form__fieldset">
+            <legend class="main-form__legend">ФИО</legend>
             <p class="main-form__full-name">
               <label for="name">Имя:</label>
               <input class="main-form__input-text" id="name" name="name" type="text" placeholder="Введите ваше имя*" required>
@@ -95,16 +95,16 @@
               <input class="main-form__input-text" id="middle-name" name="middle-name" type="text" placeholder="Отчество, если желаете">
             </p>
           </fieldset>
-          <fieldset>
-            <legend>ТЕЛ</legend>
+          <fieldset class="main-form__fieldset">
+            <legend class="main-form__legend">ТЕЛ</legend>
             <input class="main-form__input-text" type="tel" name="phone" placeholder="+7 XXX XX XX*" required>
           </fieldset>
-          <fieldset>
-            <legend>E-MAIL</legend>
+          <fieldset class="main-form__fieldset">
+            <legend class="main-form__legend">E-MAIL</legend>
             <input class="main-form__input-text" type="email" name="email" placeholder="Ваш Email*" required>
           </fieldset>
-          <fieldset>
-            <legend>ДОП</legend>
+          <fieldset class="main-form__fieldset">
+            <legend class="main-form__legend">ДОП</legend>
             <textarea class="main-form__input-text" name="more" id="" cols="20" rows="6" placeholder="Опишите все ваши пожелания к заказу"></textarea>
           </fieldset>
           <p class="main-form__notification">*Поля обязательны для заполнения</p>
