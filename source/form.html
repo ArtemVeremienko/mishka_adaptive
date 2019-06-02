@@ -3,11 +3,13 @@
   <head>
     <meta charset="UTF-8">
     <title>Вязание на заказ</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="page-header">
       <a class="page-header__logo-link" href="index.html">
-        <img class="page-header__logo-image" src="img/" width="" height="" alt="Магазин «Mishka»">
+        <img class="page-header__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Магазин «Mishka»">
       </a>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button">Открыть меню</button>
@@ -31,14 +33,14 @@
     </header>
 
     <main class="page-main">
-      <h1 class="main-header__title">Вязание на заказ</h1>
-      <section class="order-form">
+      <h1 class="page-main__title">Вязание на заказ</h1>
+      <section class="purchase-form">
         <h2 class="visually-hidden">Форма заказа</h2>
-        <p class="order-form__description">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
-        <form class="order-form__form main-form" action="https://echo.htmlacademy.ru" method="get">
+        <p class="purchase-form__description">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
+        <form class="purchase-form__form main-form" action="https://echo.htmlacademy.ru" method="get">
           <fieldset>
             <legend>Тип</legend>
-            <ul>
+            <ul class="main-form__list">
               <li class="main-form__option">
                 <input class="main-form__input main-form__input-radio" type="radio" name="type" value="accessory" id="accessory" checked>
                 <label for="accessory">Аксессуар для интерьера</label>
@@ -51,7 +53,7 @@
           </fieldset>
           <fieldset>
             <legend>Цвет</legend>
-            <ul>
+            <ul class="main-form__list">
               <li class="main-form__option">
                 <input class="main-form__input main-form__input-checkbox" type="checkbox" name="white" id="white" checked>
                 <label for="white">Белый</label>
@@ -105,7 +107,7 @@
             <legend>ДОП</legend>
             <textarea class="main-form__input-text" name="more" id="" cols="20" rows="6" placeholder="Опишите все ваши пожелания к заказу"></textarea>
           </fieldset>
-          <p class="notification">*Поля обязательны для заполнения</p>
+          <p class="main-form__notification">*Поля обязательны для заполнения</p>
           <button class="main-form__button button" type="submit">Отправить заказ</button>
         </form>
       </section>

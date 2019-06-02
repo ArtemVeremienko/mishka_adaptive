@@ -1,0 +1,21 @@
+.about {
+  padding: 30px;
+}
+
+.about__title {
+  font-size: 25px;
+  line-height: 1.2;
+}
+
+.about__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.about__item {
+  margin-top: 80px;
+  font-weight: $bold;
+  font-size: $title-font-size;
+  line-height: calc(20 / 17);
+}

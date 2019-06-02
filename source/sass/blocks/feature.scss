@@ -1,0 +1,35 @@
+.feature {
+  padding: 30px;
+  color: $description-font-color;
+}
+
+.feature__title {
+  color: $mint-color;
+  font-size: $title-font-size;
+  font-weight: $bold;
+  line-height: 20px / $title-font-size;
+  text-transform: uppercase;
+}
+
+.feature__current {
+  color: $main-font-color;
+  font-weight: $bold;
+  font-size: 25px;
+  line-height: 1.2;
+}
+
+.feature__advantages {
+
+}
+
+.feature__description {
+
+}
+
+.feature__price {
+
+}
+
+.feature__purchase {
+
+}

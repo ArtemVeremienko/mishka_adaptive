@@ -3,10 +3,18 @@
 }
 
 .page-main__title {
+  margin: 0;
+  padding: 70px 35px;
   font-size: 27px;
   font-weight: $bold;
   line-height: 1.1;
-  background-image: url("../../img/hero-mobile@1x.jpg");
+  background-color:#f1f1f1;
   background-position: center;
   background-repeat: no-repeat;
+
+  &--index {
+    padding-bottom: 110px;
+    background-image: url("../../img/hero-mobile@1x.jpg");
+  }
 }
+
