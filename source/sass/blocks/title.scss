@@ -1,0 +1,55 @@
+.title {
+  width: $mobile-width;
+  height: 280px;
+  margin: 0 auto;
+
+  background-color: #f9f9f9;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  &--index {
+    background-image: url("../img/hero-mobile@1x.jpg");
+  }
+}
+
+.title__wrapper {
+  position: relative;
+}
+.title__header {
+  font-size: 27px;
+  font-weight: $bold;
+  line-height: 57px;
+
+}
+
+.title__info {
+  position: absolute;
+  color: $description-font-color;
+}
+
+@media (min-width: $tablet-width) {
+  .title {
+    // временно
+    width: auto;
+    height: 746px;
+    margin: 0;
+    // margin-top: -90px;
+    &--index {
+      background-image: url("../img/hero-tablet@1x.jpg");
+    }
+  }
+
+  .title__wrapper {
+    width: $tablet-wrapper-width;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .title__wrapper {
+    width: $desktop-wrapper-width;
+    &--index {
+      background-image: url("../img/hero-desktop@1x.jpg");
+    }
+  }
+}

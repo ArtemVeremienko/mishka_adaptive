@@ -1,11 +1,15 @@
 html, body {
+  min-width: 320px;
   margin: 0;
+  padding: 0;
   box-sizing: border-box;
+
   font-family: $font;
   font-weight: $regular;
   font-size: $main-text;
   color: $main-font-color;
-  line-height: 1.6; // 24px / 15px
+  line-height: 24px;
+
   background-color: $main-color;
 }
 
