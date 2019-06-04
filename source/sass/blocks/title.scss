@@ -1,7 +1,7 @@
 .title {
   height: 280px;
 
-  background-color: #f9f9f9;
+  background-color: $gray-color;
   background-position: center;
   background-repeat: no-repeat;
 
@@ -27,10 +27,11 @@
 
 @media (min-width: $tablet-width) {
   .title {
-    // временно
-    height: 746px;
+    min-height: 238px;
     // margin-top: -90px;
     &--index {
+      // временно
+      min-height: 746px;
       background-image: url("../img/hero-tablet@1x.jpg");
     }
   }
@@ -42,6 +43,14 @@
 }
 
 @media (min-width: $desktop-width) {
+  .title {
+    min-height: 272px;
+    &--index {
+      // временно
+      min-height: 746px;
+    }
+  }
+
   .title__wrapper {
     width: $desktop-wrapper-width;
 

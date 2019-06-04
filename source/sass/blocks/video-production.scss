@@ -1,5 +1,10 @@
 .video-production {
-  padding: 30px;
+
+}
+
+.video-production__wrapper {
+  display: flex;
+  flex-direction: column;
 }
 
 .video-production__title {
@@ -9,9 +14,39 @@
 .video-production__description {
   color: $description-font-color;
   font-size: 13px;
-  line-height: (24px / 13px);
+  line-height: 24px;
 }
 
 .video-production__button {
   width: 192px;
+}
+
+@media (min-width: $tablet-width) {
+  .video-production__wrapper {
+    width: $tablet-wrapper-width;
+    margin: 0 auto;
+  }
+
+  .video-production__video {
+    order: -1;
+    width: 100%;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .video-production__wrapper {
+    width: $desktop-wrapper-width;
+    height: 455px;
+    flex-wrap: wrap;
+  }
+
+  .video-production__video {
+    height: 100%;
+    width: 682px;
+  }
+
+  .video-production__title,
+  .video-production__description {
+    width: 350px;
+  }
 }
