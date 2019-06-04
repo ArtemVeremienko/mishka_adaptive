@@ -1,10 +1,10 @@
-.site-list {
+.user-list {
   @include reset-list;
   font-weight: $bold;
   font-size: $title-font-size;
 }
 
-.site-list__item {
+.user-list__item {
   a {
     color: inherit;
     line-height: 24px;

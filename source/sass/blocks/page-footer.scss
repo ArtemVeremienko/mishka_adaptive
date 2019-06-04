@@ -1,3 +1,23 @@
 .page-footer {
-  padding: 30px;
+  background-color: $gray-color;
+}
+
+.page-footer__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: $tablet-width) {
+  .page-footer__wrapper {
+    flex-direction: row;
+    justify-content: space-between;
+    width: $tablet-wrapper-width;
+    margin: auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-footer__wrapper {
+    width: $desktop-wrapper-width;
+  }
 }

@@ -1,5 +1,9 @@
 .about {
-  padding: 30px;
+
+}
+
+.about__wrapper {
+
 }
 
 .about__title {
@@ -8,9 +12,9 @@
 }
 
 .about__list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+  @include reset-list;
+  display: flex;
+  flex-direction: column;
 }
 
 .about__item {
@@ -18,4 +22,29 @@
   font-weight: $bold;
   font-size: $title-font-size;
   line-height: calc(20 / 17);
+}
+
+@media (min-width: $tablet-width) {
+  .about {
+
+  }
+  .about__wrapper {
+    width: $tablet-wrapper-width;
+    margin: 0 auto;
+  }
+
+  .about__list {
+    flex-wrap: wrap;
+    height: 470px;
+  }
+
+  .about__item {
+    width: 50%;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .about__wrapper {
+    width: 700px;
+  }
 }
