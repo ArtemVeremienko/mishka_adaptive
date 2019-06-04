@@ -1,6 +1,5 @@
 .main-nav {
-  width: $mobile-width;
-  margin: 0 auto;
+
 }
 
 .main-nav__wrapper {
@@ -14,13 +13,12 @@
 
 .main-nav__list {
   // временно
-  height: 160px;
+  min-height: 160px;
 }
 
 @media (min-width: $tablet-width) {
   .main-nav {
-    width: auto;
-    margin: 0;
+
   }
 
   .main-nav__wrapper {
@@ -31,7 +29,7 @@
   }
 
   .main-nav__logo-link {
-    height: 90px;
+    min-height: 90px;
   }
 
   .site-list {
@@ -41,7 +39,7 @@
   .main-nav__logo-link,
   .main-nav__list {
     width: 50%;
-    height: 90px;
+    min-height: 90px;
   }
 
 }
@@ -55,7 +53,7 @@
   .main-nav__logo-link,
   .main-nav__list {
     width: auto;
-    height: 180px;
+    min-height: 180px;
   }
 
   .main-nav__list {
