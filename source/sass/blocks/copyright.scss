@@ -1,13 +1,33 @@
 .copyright {
-  padding-top: 30px;
+
 }
 
 .copyright__text {
   font-size: 19px;
   font-weight: 700;
-  line-height: 1;
+  line-height: 19px;
 }
 
 .copyright__link {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 21px 22px;
+  padding-bottom: 28px;
+  color: $main-font-color;
 
+  &:hover {
+    .copyright__icon path{
+      fill: #46c1ae;
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
+
+.copyright__icon path {
+  fill: $mint-color;
+}
+

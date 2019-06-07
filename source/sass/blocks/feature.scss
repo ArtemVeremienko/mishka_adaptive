@@ -1,40 +1,80 @@
 .feature {
+  width: $mobile-width;
+  margin: 0 auto;
   color: $description-font-color;
+  background-image: url("../img/bg-zigzag-line.svg");
+  background-repeat: no-repeat;
+  background-position: 0 bottom;
+  background-size: 100% auto;
 }
 
 .feature__wrapper {
   display: flex;
   flex-direction: column;
+  padding: 0 30px;
+  padding-bottom: 42px;
 }
 
 .feature__title {
   margin: 0;
+
   color: $mint-color;
   font-size: $title-font-size;
-  font-weight: $bold;
+  font-weight: bold;
   line-height: 20px / $title-font-size;
   text-transform: uppercase;
 }
 
 .feature__current {
+  margin: 0;
+  padding-top: 27px;
+  padding-bottom: 5px;
   order: -1;
   color: $main-font-color;
-  font-weight: $bold;
+  font-weight: bold;
   font-size: 25px;
-  line-height: 1.2;
+  line-height: 30px;
 }
 
 .feature__advantages {
-
+  padding-top: 9px;
+  padding-bottom: 10px;
 }
 
 .feature__description {
+  width: 100%;
+  margin-bottom: 21px;
+  border-collapse: collapse;
+}
 
+.feature__field,
+.feature__value {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 16px;
+}
+
+.feature__field {
+  width: 97px;
+}
+
+.feature__image {
+  width: 260px;
+  height: 315px;
 }
 
 .feature__wrapper-price {
+  padding-top: 10px;
   font-size: $title-font-size;
-  font-weight: $bold;
+  font-weight: bold;
+  text-align: center;
+}
+
+.feature__price {
+  margin: 0;
+  padding: 0;
+  padding-top: 14px;
+  padding-bottom: 26px;
 }
 
 .feature__purchase {
@@ -81,6 +121,11 @@
 }
 
 @media (min-width: $desktop-width) {
+  .feature {
+    width: auto;
+    margin: 0;
+  }
+
   .feature__wrapper {
     width: $desktop-wrapper-width;
     height: 792px;

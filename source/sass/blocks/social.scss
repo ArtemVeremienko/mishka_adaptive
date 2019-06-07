@@ -1,5 +1,20 @@
 .social__list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+  @include reset-list;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 26px 36px;
+  padding-bottom: 20px;
+  padding-right: 40px;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.social__link:hover .social__icon {
+  path{
+    fill: #46c1ae;
+  }
+}
+
+.social__link:active .social__icon {
+  opacity: 0.3;
 }

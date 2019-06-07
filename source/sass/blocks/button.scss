@@ -1,15 +1,25 @@
 .button {
   display: inline-block;
-  width: 260px;
+  width: 259px;
   padding: 15px;
   font: inherit;
   font-size: 18px;
-  font-weight: $bold;
-  line-height: 1;
+  font-weight: bold;
+  line-height: 20px;
   border: 2px solid $description-font-color;
   background-color: $main-color;
   text-transform: uppercase;
   text-align: center;
   vertical-align: middle;
+  cursor: pointer;
   color: $description-font-color;
+
+  &:hover {
+    background-color: $description-font-color;
+    color: $main-color;
+  }
+
+  &:active span {
+    opacity: 0.3;
+  }
 }

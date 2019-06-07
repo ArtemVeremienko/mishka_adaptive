@@ -1,5 +1,6 @@
 .title {
-  height: 280px;
+  width: 320px;
+  margin: auto;
 
   background-color: $gray-color;
   background-position: center;
@@ -7,28 +8,39 @@
 
   &--index {
     background-image: url("../img/hero-mobile@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: center -17px;
   }
 }
 
 .title__wrapper {
   position: relative;
 }
+
 .title__header {
+  margin: 0;
+  padding: 30px;
+  padding-top: 71px;
+  padding-bottom: 122px;
+  text-align: center;
   font-size: 27px;
-  font-weight: $bold;
-  line-height: 57px;
+  font-weight: bold;
+  line-height: 30px;
+  color: #010000;
 
 }
 
 .title__info {
+  display: none;
   position: absolute;
   color: $description-font-color;
 }
 
 @media (min-width: $tablet-width) {
   .title {
+    width: auto;
+    margin: 0;
     min-height: 238px;
-    // margin-top: -90px;
     &--index {
       // временно
       min-height: 746px;

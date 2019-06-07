@@ -1,12 +1,32 @@
 .site-list {
-  @include reset-list;
-  font-weight: $bold;
+  font-weight: bold;
   font-size: $title-font-size;
 }
 
 .site-list__item {
-  a {
-    color: inherit;
-    line-height: 24px;
+  box-shadow: 0 1px 0 #ececec, inset 0 1px 0 #ececec;
+
+
+  &--desktop {
+    display: none;
+  }
+}
+
+.site-list__item a {
+  display: block;
+  padding-top: 27px;
+  padding-bottom: 28px;
+  padding-left: 45px;
+  padding-right: 0;
+  color: $main-font-color;
+}
+
+.site-list__item a[href] {
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }

@@ -1,6 +1,5 @@
 .modal-basket {
-
-
+  display: none;
 }
 
 .modal-basket__wrapper {
@@ -14,7 +13,6 @@
 
 .modal-basket__title {
   color: $main-font-color;
-  font-family: $font;
   font-size: 25px;
   font-weight: $bold;
   line-height: 30px;

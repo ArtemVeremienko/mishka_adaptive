@@ -1,32 +1,50 @@
 .about {
-
+  width: 320px;
+  margin: 0 auto;
+  font-weight: bold;
 }
 
 .about__wrapper {
-
+  padding: 0 30px;
 }
 
 .about__title {
+  margin: 0;
+  padding: 27px 0;
   font-size: 25px;
-  line-height: 1.2;
+  font-weight: bold;
+  line-height: 30px;
 }
 
 .about__list {
   @include reset-list;
   display: flex;
   flex-direction: column;
+
 }
 
 .about__item {
-  margin-top: 80px;
-  font-weight: $bold;
+  position: relative;
+  padding-top: 59px;
+  padding-bottom: 24px;
   font-size: $title-font-size;
-  line-height: calc(20 / 17);
+  line-height: 20px;
+}
+
+.about__icon {
+  position: absolute;
+  top: 7px;
+  left: 0;
+
+  path {
+    fill: $mint-color;
+  }
 }
 
 @media (min-width: $tablet-width) {
   .about {
-
+    width: auto;
+    margin: 0;
   }
   .about__wrapper {
     width: $tablet-wrapper-width;
