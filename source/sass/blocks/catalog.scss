@@ -23,7 +23,7 @@
 
 .catalog__title {
   font-size: $title-font-size;
-  font-weight: $bold;
+  font-weight: bold;
   line-height: 24px;
   color: $main-font-color;
 }
@@ -35,7 +35,7 @@
 }
 
 .catalog__price {
-  font-weight: $bold;
+  font-weight: bold;
 }
 
 @media (min-width: $tablet-width) {

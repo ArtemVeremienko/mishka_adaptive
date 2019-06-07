@@ -7,6 +7,7 @@
   background-repeat: no-repeat;
 
   &--index {
+    height: 212px;
     background-image: url("../img/hero-mobile@1x.jpg");
     background-repeat: no-repeat;
     background-position: center -17px;
@@ -15,18 +16,17 @@
 
 .title__wrapper {
   position: relative;
+  padding: 0 30px;
 }
 
 .title__header {
   margin: 0;
-  padding: 30px;
-  padding-top: 71px;
-  padding-bottom: 122px;
+  margin-top: 71px;
   text-align: center;
   font-size: 27px;
   font-weight: bold;
   line-height: 30px;
-  color: #010000;
+  color: $main-font-color;
 
 }
 
@@ -40,17 +40,30 @@
   .title {
     width: auto;
     margin: 0;
-    min-height: 238px;
     &--index {
-      // временно
-      min-height: 746px;
+      height: 626px;
       background-image: url("../img/hero-tablet@1x.jpg");
+      background-position: center 0;
     }
   }
 
   .title__wrapper {
     width: $tablet-wrapper-width;
     margin: 0 auto;
+    padding: 10px;
+  }
+
+  .title__header {
+    margin-top: 143px;
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  .title__info {
+    display: block;
+    margin: 0;
+    right: 0;
+    top: 17px;
   }
 }
 

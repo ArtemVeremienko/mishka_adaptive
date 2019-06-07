@@ -1,10 +1,11 @@
 .page-footer {
-  width: 320px;
-  margin: 0 auto;
+
   background-color: $gray-color;
 }
 
 .page-footer__wrapper {
+  width: 320px;
+  margin: 0 auto;
   padding: 0 30px;
   display: flex;
   flex-direction: column;
