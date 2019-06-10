@@ -54,6 +54,7 @@
   .user-list {
     // width: 348px;
     flex-direction: row;
+    justify-content: flex-end;
   }
 
   .user-list__item {

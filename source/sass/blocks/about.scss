@@ -116,6 +116,13 @@
 
 @media (min-width: $desktop-width) {
   .about__wrapper {
-    width: 700px;
+    width: $desktop-wrapper-width;
+    padding: 31px 175px 32px;
+  }
+
+  .about__title {
+    margin: 0;
+    font-size: 53px;
+    line-height: 57px;
   }
 }

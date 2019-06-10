@@ -56,3 +56,27 @@
     }
   }
 }
+
+@media (min-width: $desktop-width) {
+  .site-list {
+    width: 440px;
+    top: 31px;
+  }
+
+  .site-list__item {
+    margin-right: 0;
+  }
+
+  .site-list__item a {
+    width: 220px;
+  }
+
+  .site-list__item--desktop {
+    display: list-item;
+  }
+
+  .site-list__item--main a {
+    margin-bottom: 50px;
+    font-size: $title-font-size;
+  }
+}

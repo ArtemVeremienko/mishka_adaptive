@@ -109,6 +109,13 @@
 }
 
 @media (min-width: $desktop-width) {
+  .assortment {
+    &::after {
+      height: 34px;
+      bottom: -17px;
+    }
+  }
+
   .assortment__wrapper {
     width: $desktop-wrapper-width;
   }

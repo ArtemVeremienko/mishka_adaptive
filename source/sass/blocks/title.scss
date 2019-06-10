@@ -76,5 +76,12 @@
 
   .title__wrapper {
     width: $desktop-wrapper-width;
+    padding-bottom: 16px;
+  }
+
+  .title__header {
+    width: 620px;
+    font-size: 53px;
+    line-height: 57px;
   }
 }
