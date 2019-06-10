@@ -1,6 +1,7 @@
 .assortment {
   width: 320px;
   margin: 0 auto;
+  position: relative;
 }
 
 .assortment__list {
@@ -13,51 +14,51 @@
 }
 
 .assortment__item {
-
   background-color: $mint-color;
-  a {
-    color: $main-color;
-  }
-  &--dark {
+
+  &:nth-child(2) {
     background-color: #56c3b2;
   }
 }
 
 .assortment__link {
-  display: block;
-  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   width: 100%;
-  padding-bottom: 29px;
+  padding-bottom: 24px;
   padding-left: 29px;
-  padding-top: 26px;
-  padding-right: 120px;
+  padding-top: 18px;
+  padding-right: 28px;
+  color: $main-color;
+  background-color: $mint-color;
+
+  &--dark {
+    background-color: #56c3b2;
+  }
 
   &:hover {
-    padding-bottom: 34px;
+    transform: translateY(-5px);
   }
 
   &:active {
-    opacity: 0.3;
+    color: rgba($main-color, 0.3);
   }
 }
 
-.assortment__link:hover .assortment__link-icon {
+.assortment__link:hover .assortment__icon {
   opacity: 0.7;
 }
 
-.assortment__link:active .assortment__link-icon {
+.assortment__link:active .assortment__icon {
   opacity: 0.3;
 }
 
-.assortment__link-icon {
-  position: absolute;
-  right: 26px;
-  top: 21px;
+.assortment__icon {
   opacity: 0.5;
 
   &--interior {
-    right: 37px;
-    top: 23px;
+    margin-right: 9px;
   }
 }
 
@@ -65,7 +66,19 @@
   .assortment {
     width: auto;
     margin: 0;
-    // margin-top: -120px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: -12px;
+      height: 24px;
+
+      background-size: auto 100%;
+      background-repeat: repeat-x;
+      background-image: url("../img/bg-zigzag-fill.svg");
+    }
   }
 
   .assortment__wrapper {
@@ -79,6 +92,19 @@
 
   .assortment__item {
     width: 50%;
+  }
+
+  .assortment__link {
+    padding-left: 35px;
+    padding-top: 27px;
+    padding-right: 34px;
+    padding-bottom: 30px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .assortment__icon--interior {
+    margin-right: 0;
   }
 }
 

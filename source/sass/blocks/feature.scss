@@ -1,11 +1,21 @@
 .feature {
   width: $mobile-width;
   margin: 0 auto;
+  position: relative;
   color: $description-font-color;
-  background-image: url("../img/bg-zigzag-line.svg");
-  background-repeat: no-repeat;
-  background-position: 0 bottom;
-  background-size: 100% auto;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 6px;
+
+    background-image: url("../img/bg-zigzag-line.svg");
+    background-repeat: repeat-x;
+    background-size: auto 100%;
+  }
 }
 
 .feature__wrapper {
@@ -21,7 +31,7 @@
   color: $mint-color;
   font-size: $title-font-size;
   font-weight: bold;
-  line-height: 20px / $title-font-size;
+  line-height: 20px;
   text-transform: uppercase;
 }
 
@@ -74,7 +84,7 @@
   margin: 0;
   padding: 0;
   padding-top: 14px;
-  padding-bottom: 26px;
+  padding-bottom: 24px;
 }
 
 .feature__purchase {
@@ -82,42 +92,85 @@
 }
 
 @media (min-width: $tablet-width) {
+  .feature {
+    width: auto;
+    margin: 0;
+
+    &::after {
+      height: 17px;
+    }
+  }
+
   .feature__wrapper {
+    position: relative;
     flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
     width: $tablet-wrapper-width;
     margin: 0 auto;
-    height: 616px;
+    padding: 0;
+    padding-bottom: 67px;
   }
 
   .feature__title {
-    order: 2;
-    width: 50%;
+    width: 130px;
+    margin-top: 56px;
+    text-align: center;
+    line-height: 17px;
   }
 
   .feature__current {
-    width: 50%;
+    order: -1;
+    width: 500px;
+    margin-top: 18px;
+    font-size: 43px;
+    line-height: 50px;
+
+  }
+
+  .feature__text {
+    width: 292px;
+    margin-top: 18px;
   }
 
   .feature__advantages {
-    width: 50%;
+    margin-bottom: 0;
+    font-size: $title-font-size;
+    line-height: 30px;
   }
 
   .feature__description {
-    width: 50%;
+    margin-top: 26px;
+  }
+
+  .feature__description tr {
+    border-bottom: 1px solid #ececec;
+  }
+
+  .feature__description td {
+    padding-bottom: 8px;
+    padding-top: 7px;
   }
 
   .feature__image {
-    order: 3;
-    width: 50%;
+    width: 333px;
     height: 404px;
+    margin-top: 52px;
   }
   .feature__wrapper-price {
-    order: 1;
-    width: 50%;
-
+    position: absolute;
+    left: 0;
+    bottom: 67px;
   }
 
+  .feature__price {
+    padding-bottom: 32px;
+    font-size: 20px;
+  }
 
+  .feature__purchase {
+    width: 291px;
+  }
 }
 
 @media (min-width: $desktop-width) {

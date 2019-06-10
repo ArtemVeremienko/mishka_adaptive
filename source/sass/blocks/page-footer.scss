@@ -20,11 +20,26 @@
     width: auto;
     margin: 0;
   }
+
   .page-footer__wrapper {
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
     width: $tablet-wrapper-width;
     margin: auto;
+    padding: 55px 0;
+  }
+
+  .page-footer__logo {
+    display: block;
+
+    &:hover {
+      fill: #46c1ae;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 }
 

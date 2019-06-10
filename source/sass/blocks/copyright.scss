@@ -31,3 +31,17 @@
   fill: $mint-color;
 }
 
+@media (min-width: $tablet-width) {
+  .copyright__link {
+    padding-right: 0;
+  }
+
+  .copyright__text {
+    margin-right: 30px;
+  }
+
+  .copyright__link {
+    padding: 0;
+  }
+}
+

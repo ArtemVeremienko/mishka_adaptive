@@ -18,3 +18,14 @@
 .social__link:active .social__icon {
   opacity: 0.3;
 }
+
+@media (min-width: $tablet-width) {
+  .social__list {
+    width: 140px;
+    margin-left: 80px;
+    padding: 0;
+    justify-content: space-between;
+    border: none;
+
+  }
+}
