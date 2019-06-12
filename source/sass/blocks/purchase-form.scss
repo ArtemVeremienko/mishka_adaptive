@@ -1,8 +1,15 @@
 .purchase-form {
+  width: $mobile-width;
+  margin: 0 auto;
+  margin-bottom: 54px;
+}
 
+.purchase-form__wrapper {
+  padding: 10px 30px 0;
 }
 
 .purchase-form__description {
+  margin-bottom: 23px;
   color: $description-font-color;
   font-size: 13px;
   line-height: 24px;
