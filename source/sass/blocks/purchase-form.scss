@@ -14,3 +14,25 @@
   font-size: 13px;
   line-height: 24px;
 }
+
+@media (min-width: $tablet-width) {
+  .purchase-form {
+    width: auto;
+    margin: 0;
+  }
+
+  .purchase-form__wrapper {
+    width: $tablet-width;
+    margin: 0 auto;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .purchase-form__description {
+    margin-top: 62px;
+    padding-left: 50px;
+    padding-right: 50px;
+    font-size: $title-font-size;
+    line-height: 30px;
+  }
+}
