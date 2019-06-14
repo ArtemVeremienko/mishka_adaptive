@@ -1,18 +1,45 @@
 .page-footer {
+
   background-color: $gray-color;
 }
 
 .page-footer__wrapper {
+  width: 320px;
+  margin: 0 auto;
+  padding: 0 30px;
   display: flex;
   flex-direction: column;
 }
 
+.page-footer__logo {
+  display: none;
+}
+
 @media (min-width: $tablet-width) {
+  .page-footer {
+    width: auto;
+    margin: 0;
+  }
+
   .page-footer__wrapper {
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
     width: $tablet-wrapper-width;
     margin: auto;
+    padding: 55px 0;
+  }
+
+  .page-footer__logo {
+    display: block;
+
+    &:hover {
+      fill: #46c1ae;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 }
 

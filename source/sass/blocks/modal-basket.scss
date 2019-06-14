@@ -1,34 +1,107 @@
 .modal-basket {
-
-
+  display: none;
+  position: absolute;
+  width: 100vw;
+  max-width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-color: rgba($main-color, 0.9);
+  z-index: 1;
 }
 
 .modal-basket__wrapper {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
   width: $mobile-width;
-  max-height: 336px;
-  margin: 0 auto;
+  height: 336px;
+  top: 50%;
+  left: 50%;
+  margin-left: -160px;
+  margin-top: (336px / 2) * -1;
   padding: 30px;
+  background-color: $main-color;
   box-shadow: 0 5px 10px rgba(0, 1, 1, 0.25);
   border: 1px solid #c6c6c6;
 }
 
 .modal-basket__title {
+  margin-top: 0px;
+  margin-bottom: 20px;
   color: $main-font-color;
-  font-family: $font;
   font-size: 25px;
-  font-weight: $bold;
+  font-weight: bold;
   line-height: 30px;
+  text-align: center;
   text-transform: uppercase;
 }
 
 .modal-basket__text {
+  width: 180px;
+  margin: 0 auto;
+  margin-bottom: 20px;
   color: $description-font-color;
   line-height: 30px;
+  text-align: center;
 }
+
+.modal-basket__list {
+  @include reset-list;
+  display: flex;
+  justify-content: space-between;
+}
+
+.modal-basket__label {
+  display: block;
+  padding: 12px 31px;
+  color: $description-font-color;
+  font-weight: bold;
+  font-size: $title-font-size;
+  text-transform: uppercase;
+  border: 2px solid rgba($description-font-color, 0.1);
+
+  &:hover {
+    border-color: rgba($mint-color, 0.3);
+  }
+
+  &:active {
+    border-color: $mint-color;
+  }
+}
+
+.modal-basket__input:focus + .modal-basket__label {
+  border-color: rgba($mint-color, 0.3);
+}
+
+.modal-basket__input:checked + .modal-basket__label {
+  border-color: $mint-color;
+}
+
+
+.modal-basket__button {
+  width: 100%;
+  margin-top: 40px;
+  background-color: $mint-color;
+  border: none;
+  color: $main-color;
+
+  &:hover,
+  &:focus {
+    background-color: $mint-color;;
+    color: rgba($main-color, 0.6);
+  }
+
+  &:active {
+    color: rgba($main-color, 0.3);
+  }
+}
+
 
 @media (min-width: $tablet-width) {
   .modal-basket__wrapper {
     width: 566px;
+    margin-left: (566px / 2) * -1;
     padding: 46px 108px;
   }
 }

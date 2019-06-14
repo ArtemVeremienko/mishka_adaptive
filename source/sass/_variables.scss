@@ -5,12 +5,10 @@ $description-font-color: #444444;
 $mint-color: #63d1bb;
 $main-text: 15px;
 $title-font-size: 17px;
-$regular: 400;
-$bold: 700;
-$font: "Open Sans", Arial, sans-serif;
 $mobile-width: 320px;
 $tablet-width: 768px;
 $desktop-width: 1250px;
-$mobile-wrapper-width: $mobile-width - (30 * 2);
-$tablet-wrapper-width: $tablet-width - (50 * 2);
-$desktop-wrapper-width: $desktop-width - (100 * 2);
+$mobile-wrapper-width: 260px; //$mobile-width - (30 * 2)
+$tablet-wrapper-width: 668px; //$tablet-width - (50 * 2)
+$desktop-wrapper-width: 1050px; //$desktop-width - (100 * 2)
+$mobile-width-only: 767px;
