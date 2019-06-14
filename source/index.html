@@ -249,23 +249,23 @@
     <section class="modal-basket">
       <div class="modal-basket__wrapper">
         <h2 class="modal-basket__title">Добавить в корзину</h2>
-        <p class="modal-basket__text">Выберите свой размер:</p>
-        <form class="modal-basket__form order-form" action="https://echo.htmlacademy.ru" method="get">
-          <ul class="order-form__list">
-            <li class="order-form__item">
-              <input class="vissualy-hidden" id="size-S" type="radio" name="order-size" value="S" checked>
-              <label for="size-S">S</label>
+        <p class="modal-basket__text">Выберите размер:</p>
+        <form class="modal-basket__form" action="https://echo.htmlacademy.ru" method="get">
+          <ul class="modal-basket__list">
+            <li class="modal-basket__item">
+              <input class="modal-basket__input visually-hidden" id="size-S" type="radio" name="order-size" value="S" checked>
+              <label class="modal-basket__label" for="size-S">S</label>
             </li>
-            <li class="order-form__item">
-              <input class="vissualy-hidden" id="size-M" type="radio" name="order-size" value="M">
-              <label for="size-M">M</label>
+            <li class="modal-basket__item">
+              <input class="modal-basket__input visually-hidden" id="size-M" type="radio" name="order-size" value="M">
+              <label class="modal-basket__label" for="size-M">M</label>
             </li>
-            <li class="order-form__item">
-              <input class="vissualy-hidden" id="size-L" type="radio" name="order-size" value="L">
-              <label for="size-L">L</label>
+            <li class="modal-basket__item">
+              <input class="modal-basket__input visually-hidden" id="size-L" type="radio" name="order-size" value="L">
+              <label class="modal-basket__label" for="size-L">L</label>
             </li>
           </ul>
-          <button class="button order-form__button" type="submit">Добавить</button>
+          <button class="button modal-basket__button" type="submit">Добавить</button>
         </form>
       </div>
     </section>
