@@ -74,7 +74,7 @@
 }
 
 .feature__wrapper-price {
-  padding-top: 10px;
+  padding-top: 4px;
   font-size: $title-font-size;
   font-weight: bold;
   text-align: center;
@@ -160,7 +160,7 @@
   .feature__wrapper-price {
     position: absolute;
     left: 0;
-    bottom: 67px;
+    bottom: 72px;
   }
 
   .feature__price {
@@ -225,9 +225,9 @@
   .feature__image {
     position: absolute;
     width: 525px;
-    height: 663px;
+    height: 636px;
     right: 0;
-    top: 0;
+    top: 19px;
   }
 
   .feature__wrapper-price {

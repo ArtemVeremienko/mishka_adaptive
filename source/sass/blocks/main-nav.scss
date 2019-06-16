@@ -172,9 +172,16 @@
   }
 
   .main-nav__logo-link {
+    padding-top: 9px;
+    padding-bottom: 0px;
+    margin-right: 50px;
     box-shadow: none;
     margin-left: auto;
-    margin-right: 70px;
+  }
+
+  .main-nav__logo-image {
+    width: 148px;
+    height: auto;
   }
 
 }
