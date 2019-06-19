@@ -10,9 +10,7 @@
 }
 
 .social__link:hover .social__icon {
-  path{
-    fill: #46c1ae;
-  }
+  fill: #46c1ae;
 }
 
 .social__link:active .social__icon {
@@ -26,6 +24,5 @@
     padding: 0;
     justify-content: space-between;
     border: none;
-
   }
 }

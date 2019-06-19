@@ -87,9 +87,8 @@
   cursor: pointer;
   opacity: 0.2;
 
-  path {
-    fill: $mint-color;
-  }
+  fill: $mint-color;
+
 
   &:hover {
     opacity: 1;

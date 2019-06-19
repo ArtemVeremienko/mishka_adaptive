@@ -37,9 +37,7 @@
   left: 32px;
   opacity: 0.2;
 
-  path {
-    fill: $mint-color;
-  }
+  fill: $mint-color;
 }
 
 .user-list__item a[href]:hover .user-list__icon {
@@ -52,7 +50,6 @@
 
 @media (min-width: $tablet-width) {
   .user-list {
-    // width: 348px;
     flex-direction: row;
     justify-content: flex-end;
   }

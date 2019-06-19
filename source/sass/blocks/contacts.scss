@@ -56,7 +56,16 @@
 }
 
 .contacts__map {
+  position: relative;
   margin: 0;
+
+  &::after {
+    content: url("../img/icon-map-pin.svg");
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-33%, -80%);
+  }
 }
 
 .contacts__map-image {

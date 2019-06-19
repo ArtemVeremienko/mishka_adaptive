@@ -184,6 +184,13 @@
   right: 4px;
   top: 34px;
   opacity: 0.2;
+
+  fill: $mint-color;
+
+  &:hover,
+  &:active {
+    opacity: 1;
+  }
 }
 
 .main-form__input-text {
