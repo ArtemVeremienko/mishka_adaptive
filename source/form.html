@@ -8,6 +8,11 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
+
+    <div style="display: none">
+      <include src="build/img/sprite.svg"></include>
+    </div>
+
     <header class="page-header">
       <nav class="main-nav main-nav--opened main-nav--nojs">
         <div class="main-nav__wrapper">
@@ -37,7 +42,7 @@
             <li class="user-list__item user-list__item--search">
               <a href="#">
                 <svg class="user-list__icon user-list__icon--search" width="17.6px" height="17.6px">
-                  <use xlink:href="img/sprite.svg#icon-search"></use>
+                  <use xlink:href="#icon-search"></use>
                 </svg>
                 Поиск по сайту
               </a>
@@ -45,7 +50,7 @@
             <li class="user-list__item">
               <a href="#">
                 <svg class="user-list__icon" width="20.294px" height="18.849px">
-                  <use xlink:href="img/sprite.svg#icon-basket"></use>
+                  <use xlink:href="#icon-cart"></use>
                 </svg>
                 Корзина: пока пуста
               </a>
@@ -131,14 +136,14 @@
               <label class="main-form__legend main-form__legend--telephone" for="telephone">Тел</label>
               <input class="main-form__input-text" type="tel" id="telephone" name="phone" placeholder="+7 XXX XX XX*" required>
               <svg class="main-form__icon main-form__icon--phone" width="24.829px" height="24.333px">
-                <use xlink:href="img/sprite.svg#icon-telephone"></use>
+                <use xlink:href="#icon-phone"></use>
               </svg>
             </div>
             <div class="main-form__fieldset main-form__fieldset--email main-form__fieldset--gray">
               <label class="main-form__legend main-form__legend--email" for="email">E-mail</label>
               <input class="main-form__input-text" id="email" type="email" name="email" placeholder="Ваш Email*" required>
               <svg class="main-form__icon" width="32px" height="32px">
-                <use xlink:href="img/sprite.svg#icon-email"></use>
+                <use xlink:href="#icon-mail"></use>
               </svg>
 
             </div>
@@ -156,14 +161,16 @@
 
     <footer class="page-footer">
         <div class="page-footer__wrapper">
-          <svg class="page-footer__logo" width="101.615px" height="34.056px">
-            <use xlink:href="img/sprite.svg#icon-footer-logo"></use>
-          </svg>
+          <a class="page-footer__link" href="index.html">
+            <svg class="page-footer__logo" width="101.615px" height="34.056px">
+              <use xlink:href="#logo-footer"></use>
+            </svg>
+          </a>
           <ul class="social__list">
             <li class="social__item">
               <a class="social__link social__link--instagram" href="#">
                 <svg class="social__icon" width="21.769px" height="21.334px">
-                  <use xlink:href="img/sprite.svg#icon-instagram"></use>
+                  <use xlink:href="#icon-insta"></use>
                 </svg>
                 <span class="visually-hidden">Мы в Инстаграме</span>
               </a>
@@ -171,7 +178,7 @@
             <li class="social__item">
               <a class="social__link social__link--facebook" href="#">
                 <svg class="social__icon" width="14.962px" height="27.718px">
-                  <use xlink:href="img/sprite.svg#icon-facebook"></use>
+                  <use xlink:href="#icon-fb"></use>
                 </svg>
                 <span class="visually-hidden">Мы в Фейсбуке</span>
               </a>
@@ -179,7 +186,7 @@
             <li class="social__item">
               <a class="social__link social__link--twitter" href="#">
                 <svg class="social__icon" width="23.494px" height="20.168px">
-                  <use xlink:href="img/sprite.svg#icon-twitter"></use>
+                  <use xlink:href="#icon-twitter"></use>
                 </svg>
                 <span class="visually-hidden">Мы в Твиттере</span>
               </a>
@@ -189,7 +196,7 @@
             <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
               <b class="copyright__text">Разработано</b>
               <svg class="copyright__icon" width="27px" height="34px">
-                <use xlink:href="img/sprite.svg#icon-copyright"></use>
+                <use xlink:href="#logo-htmlacademy"></use>
               </svg>
               <span class="visually-hidden">HTML Academy</span>
             </a>

@@ -9,7 +9,6 @@
 *.code-workspace
 node_modules/
 npm-debug.*
-source/css/*.css
-source/css/*.map
 Thumbs.db
 mishka-all/
+build/
