@@ -11,6 +11,8 @@
   flex-direction: column;
 }
 
+
+
 .page-footer__logo {
   display: none;
 }
@@ -32,6 +34,10 @@
 
   .page-footer__logo {
     display: block;
+  }
+
+  .page-footer__link[href] .page-footer__logo {
+    cursor: pointer;
 
     &:hover {
       fill: #46c1ae;
